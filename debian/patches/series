@@ -1,2 +1,4 @@
 12_lessdeps_libgcrypt-config.diff
 20_ftbfsmips.diff
+35_bug-in-mpi_powm-for-e-0.patch
+36_Mitigate-flush-reload-cache-attack-on-RSA.patch

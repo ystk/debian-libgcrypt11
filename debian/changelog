@@ -1,3 +1,16 @@
+libgcrypt11 (1.4.5-2+squeeze1) squeeze-security; urgency=high
+
+  * Pull and unfuzzz code changes from 1.5.3 security fix release from
+    upstream GIT:
+    + [35_bug-in-mpi_powm-for-e-0.patch] mpi/mpi-pow.c (gcry_mpi_powm) - For
+      a zero exponent, make sure that the result has been allocated.
+    + [36_Mitigate-flush-reload-cache-attack-on-RSA.patch] Mitigate a
+      flush+reload cache attack on RSA secret exponents.
+      <http://eprint.iacr.org/2013/448>
+    This fixes CVE-2013-4242.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 27 Jul 2013 13:42:31 +0200
+
 libgcrypt11 (1.4.5-2) unstable; urgency=low
 
   * Fix FTBFS on mips(el). Thank you, Aurelien Jarno. Closes: #561475
