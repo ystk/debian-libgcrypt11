@@ -1,3 +1,17 @@
+libgcrypt11 (1.4.5-2+squeeze2) squeeze-lts; urgency=medium
+
+  * Non-maintainer upload by the Debian LTS team.
+  * Add 37_Replace-deliberate-division-by-zero-with-_gcry_divid.patch patch.
+    Replace deliberate division by zero with _gcry_divide_by_zero.
+  * Add 38_CVE-2014-5270.patch patch.
+    CVE-2014-5270: side-channel attack on Elgamal encryption subkeys.
+    Cryptanalysis attack as described by Genkin, Pipman and Tromer. See
+    <http://www.cs.tau.ac.il/~tromer/handsoff/>
+  * Both patches have been backported from the 1.5.0-5+deb7u2 wheezy
+    security update.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Thu, 20 Nov 2014 14:46:05 +0100
+
 libgcrypt11 (1.4.5-2+squeeze1) squeeze-security; urgency=high
 
   * Pull and unfuzzz code changes from 1.5.3 security fix release from
