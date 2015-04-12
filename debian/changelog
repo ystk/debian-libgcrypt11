@@ -1,3 +1,14 @@
+libgcrypt11 (1.4.5-2+squeeze3) squeeze-lts; urgency=high
+
+  * Non-maintainer upload by the Squeeze LTS Team.
+  * Use ciphertext blinding for Elgamal decryption to counteract a
+    side-channel attack as per CVE-2014-3591
+  * Fix data-dependent timing variations in the modular exponentiation
+    function that could be used to mount a side-channel attack as per
+    CVE-2015-0837
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Thu, 09 Apr 2015 10:00:05 +0200
+
 libgcrypt11 (1.4.5-2+squeeze2) squeeze-lts; urgency=medium
 
   * Non-maintainer upload by the Debian LTS team.

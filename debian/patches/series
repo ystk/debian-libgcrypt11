@@ -4,3 +4,7 @@
 36_Mitigate-flush-reload-cache-attack-on-RSA.patch
 37_Replace-deliberate-division-by-zero-with-_gcry_divid.patch
 38_CVE-2014-5270.patch
+39_CVE-2014-3591.patch
+40_CVE-2015-0837-1.patch
+40_CVE-2015-0837-2.patch
+40_CVE-2015-0837-3.patch
